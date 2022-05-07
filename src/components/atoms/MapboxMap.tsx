@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, VFC } from "react";
 
 export const MapboxMap: VFC = () => {
   mapboxgl.accessToken =
-    "pk.eyJ1IjoidG9reWFtYWciLCJhIjoiY2wydjk3M3Q3MDlwdTNwc3Q4YnEycmVkdiJ9.07SMOZAndkO89e0nIw6w6A";
+    "your_token";
 
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
