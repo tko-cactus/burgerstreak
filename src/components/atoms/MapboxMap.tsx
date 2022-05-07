@@ -2,8 +2,7 @@ import mapboxgl from "mapbox-gl";
 import { useEffect, useRef, useState, VFC } from "react";
 
 export const MapboxMap: VFC = () => {
-  mapboxgl.accessToken =
-    "your_token";
+  mapboxgl.accessToken = `${process.env.PUBLIC_MAPBOX_TOKEN}`;
 
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
