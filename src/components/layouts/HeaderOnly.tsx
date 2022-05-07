@@ -8,9 +8,9 @@ type Props = {
 export const HeaderOnly: VFC<Props> = (props) => {
   const { children } = props;
   return (
-    <>
+    <div>
       <NavigationBar />
       {children}
-    </>
+    </div>
   );
 };
